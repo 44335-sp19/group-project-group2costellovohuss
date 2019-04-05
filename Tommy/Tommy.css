@@ -1,0 +1,16 @@
+.jumbotron {
+    background-image: url("keyboard.png");
+    background-size: cover;
+}
+
+.sig {
+    padding: 7% 17% 7% 17%;
+    width: 100%;
+}
+
+.downAngle {
+    width: 4%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
