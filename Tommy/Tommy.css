@@ -1,11 +1,16 @@
-.jumbotron {
+* {
+    font-family: "Century Gothic", "Avenir";
+}
+
+.landing {
     background-image: url("keyboard.png");
     background-size: cover;
 }
 
 .sig {
-    padding: 7% 17% 7% 17%;
-    width: 100%;
+    display: block;
+    margin: 8% auto 8% auto;
+    width: 65%;
 }
 
 .downAngle {
@@ -13,4 +18,37 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: -3%;
+}
+
+.aboutMe {
+    /*background-image: url("woodGrain.png");
+    background-size: cover;*/
+    background-color: darkgray;
+}
+
+.paper {
+    margin: 0 15% 0 15%;
+    padding: 5%;
+    background-color: white;
+    min-width: 70%;
+    border-radius: 20px;
+}
+
+.tag {
+    color: darkmagenta;
+}
+
+footer {
+    font-size: 80%;
+    padding: 2% 0 2% 0;
+    background-color: lightgrey;
+}
+
+footer a {
+    color: black;
+}
+
+footer a:hover {
+    color: darkmagenta;
 }
