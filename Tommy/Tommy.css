@@ -4,7 +4,10 @@
 
 .landing {
     background-image: url("keyboard.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     background-size: cover;
+    height: 600px;
 }
 
 .sig {
@@ -15,32 +18,40 @@
 
 #downAngle {
     width: 4%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: -3%;
+    position: sticky;
+    bottom: 10%;
+    left: 50%;
 }
 
 .aboutMe {
-    /*background-image: url("woodGrain.png");
-    background-size: cover;*/
     background-color: darkgray;
 }
 
 .paper {
     margin: 0 15% 0 15%;
-    padding: 2.5% 5% 10% 5%;
-    background-color: white;
+    padding: 2.5% 2.5% 10% 2.5%;
+    background-color: #282a36;
     min-width: 70%;
     border-radius: 20px;
 }
 
 .paper p {
     font-family: "Courier", "Consolas";
+    color: white;
 }
 
-.tag {
-    color: darkmagenta;
+.tagPurple {
+    color: #ff5bb9;
+    font-family: "Courier", "Consolas";
+}
+
+.tagGreen {
+    color: #4df06a;
+    font-family: "Courier", "Consolas";
+}
+
+.tagOrange {
+    color: orange;
     font-family: "Courier", "Consolas";
 }
 
