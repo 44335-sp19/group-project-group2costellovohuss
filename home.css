@@ -4,6 +4,10 @@
     font-size: 50px;
 }
 
+.row {
+    justify-content: center;
+}
+
 .card {
     margin: 3%;
 }
