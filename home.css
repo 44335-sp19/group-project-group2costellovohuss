@@ -11,3 +11,8 @@
 .card {
     margin: 3%;
 }
+footer {
+    background-color: gray;
+    padding: 5% 0;
+    color: white;
+}
