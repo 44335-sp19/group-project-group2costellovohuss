@@ -1,0 +1,19 @@
+.jumbotron-fluid p{
+    margin: 5% auto 5% auto;
+    text-align: center;
+    font-size: 50px;
+}
+
+.row {
+    justify-content: center;
+}
+
+.card {
+    margin: 3%;
+}
+
+footer {
+    background-color: gray;
+    padding: 5% 0;
+    color: white;
+}

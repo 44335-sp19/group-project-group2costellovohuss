@@ -13,7 +13,7 @@
     width: 65%;
 }
 
-.downAngle {
+#downAngle {
     width: 4%;
     display: block;
     margin-left: auto;
@@ -29,14 +29,24 @@
 
 .paper {
     margin: 0 15% 0 15%;
-    padding: 5%;
+    padding: 2.5% 5% 10% 5%;
     background-color: white;
     min-width: 70%;
     border-radius: 20px;
 }
 
+.paper p {
+    font-family: "Courier", "Consolas";
+}
+
 .tag {
     color: darkmagenta;
+    font-family: "Courier", "Consolas";
+}
+
+#indent {
+    font-family: "Courier", "Consolas";
+    margin-left: 5%;
 }
 
 footer {
