@@ -1,3 +1,7 @@
+* {
+    font-family: "Century Gothic", "Avenir";
+}
+
 .jumbotron-fluid p{
     margin: 5% auto 5% auto;
     text-align: center;
