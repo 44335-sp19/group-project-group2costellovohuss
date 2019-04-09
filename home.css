@@ -1,0 +1,9 @@
+.jumbotron-fluid p{
+    margin: 5% auto 5% auto;
+    text-align: center;
+    font-size: 50px;
+}
+
+.card {
+    margin: 3%;
+}
