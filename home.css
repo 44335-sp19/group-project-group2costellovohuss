@@ -2,10 +2,20 @@
     font-family: "Century Gothic", "Avenir";
 }
 
+.jumbotron-fluid {
+    background-image: url(stars.png);
+    background-size: cover;
+}
+
 .jumbotron-fluid p{
     margin: 5% auto 5% auto;
     text-align: center;
     font-size: 75px;
+    color: white;
+}
+
+h1 {
+    text-align: center;
 }
 
 .row {
