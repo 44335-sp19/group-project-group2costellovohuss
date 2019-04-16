@@ -1,0 +1,14 @@
+.jumbotron-fluid p{
+    margin: 5% auto;
+    text-align: center;
+    font-size: 50px;
+}
+img {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+}
+.zoom:hover {
+    transform: scale(1.25);
+    z-index: 1;
+}
