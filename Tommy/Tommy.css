@@ -20,7 +20,7 @@
     width: 4%;
     position: sticky;
     bottom: 10%;
-    left: 50%;
+    left: 48%;
 }
 
 .aboutMe {
@@ -68,8 +68,15 @@ footer {
 
 footer a {
     color: black;
+    padding-left: 50px;
 }
 
 footer a:hover {
     color: darkmagenta;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
