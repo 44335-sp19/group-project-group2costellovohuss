@@ -24,5 +24,5 @@ $(document).ready(function() {
             scrollTop: $("#contact").offset().top
             }, 900);
     });
-
+    
 });
