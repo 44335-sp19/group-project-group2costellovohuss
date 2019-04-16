@@ -27,15 +27,17 @@
     background-color: darkgray;
 }
 
-.paper {
-    margin: 0 15% 0 15%;
-    padding: 2.5% 2.5% 10% 2.5%;
-    background-color: #282a36;
-    min-width: 70%;
-    border-radius: 20px;
+@media screen and (min-width: 850px) {
+    .paper {
+        margin: 0 15% 0 15%;
+        padding: 2.5% 2.5% 10% 2.5%;
+        background-color: #282a36;
+        min-width: 70%;
+        border-radius: 20px;
+    }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 850px) {
        .paper {
             margin: 0 1% 0 1%;
             padding: 1% 1% 5% 1%;
