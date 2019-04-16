@@ -27,6 +27,7 @@ h1 {
 }
 
 footer {
+    margin-top: 3%;
     background-color: gray;
     padding: 5% 0;
     color: white;
