@@ -4,13 +4,14 @@ $(document).ready(function() {
     });
     $("#joePic").click(function () { 
         window.location.href = "Joe/Joe.html";
-        });
-    $("#tommyPic, #cliftonPic, #joePic").mouseover(function() {
-        $(this).css('cursor', 'pointer'); //changes mouse pointer to hand when hovered over card
-        $(this).css('transform', 'scale(1.1)'); //expands the card on hover
     });
-    $("#tommyPic, #cliftonPic, #joePic").mouseout(function() {
-        $(this).css('transform', 'scale(1)'); //reverts to normal size when mouse off
+    
+    $("#tommyPic, #cliftonPic, #joePic").mouseover(function() { //When hovering over card,
+        $(this).css('cursor', 'pointer'); //change mouse pointer to hand
+        $(this).css('transform', 'scale(1.1)'); //expand the card
+    });
+    $("#tommyPic, #cliftonPic, #joePic").mouseout(function() { //When mouse off card,
+        $(this).css('transform', 'scale(1)'); //reverts card back to normal size
     });
 
 });
