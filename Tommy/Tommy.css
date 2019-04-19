@@ -4,7 +4,7 @@
 
 @media screen and (min-width: 850px) { /*full size*/
     .padding {
-        padding: 0 10%;
+        padding: 0 10% 0 10%;
     }
     
     .landing {
@@ -26,7 +26,7 @@
 
 @media screen and (max-width: 850px) { /*medium*/
     .padding {
-        padding: 0 5%;
+        padding: 0 5% 0 5%;
     }
     
     .landing {
@@ -48,7 +48,7 @@
 
 @media screen and (max-width: 600px) { /*Small*/
     .padding {
-        padding: 0 1%;
+        padding: 0 1% 0 1%;
     }
     
     .landing {
@@ -81,6 +81,11 @@
     left: 48%;
 }
 
+.nav-item {
+    padding-left: 10px;
+    color: darkgray;
+}
+
 .aboutMe {
     background-color: darkgray;
 }
@@ -88,6 +93,7 @@
 .paper p {
     font-family: "Courier", "Consolas";
     color: white;
+    font-size: 14px;
 }
 
 .tagPurple {
@@ -116,14 +122,13 @@
 }
 
 footer {
-    font-size: 80%;
+    font-size: 14px;
     padding: 2% 0 2% 0;
     background-color: lightgrey;
 }
 
 footer a {
     color: black;
-    padding-left: 50px;
 }
 
 footer a:hover {
