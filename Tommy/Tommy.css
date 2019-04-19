@@ -129,9 +129,3 @@ footer a {
 footer a:hover {
     color: darkmagenta;
 }
-
-.flex-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
