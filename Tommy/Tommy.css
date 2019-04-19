@@ -122,8 +122,9 @@
 }
 
 footer {
+    margin-top: 5%;
     font-size: 14px;
-    padding: 2% 0 2% 0;
+    padding: 3% 0 3% 0;
     background-color: lightgrey;
 }
 
@@ -132,5 +133,6 @@ footer a {
 }
 
 footer a:hover {
-    color: darkmagenta;
+    color: magenta;
+    text-decoration: none;
 }
