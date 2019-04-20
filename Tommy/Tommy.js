@@ -5,7 +5,7 @@ $(document).ready(function() {
             }, 1000);
     });
 
-    $("#downAngle, #navAboutMe, #navProjects, #navContact").mouseover(function() { //changes mouse pointer to hand when hovered over button
+    $("#downAngle, #navAboutMe, #navProjects, #navContact, #navHamburger").mouseover(function() { //changes mouse pointer to hand when hovered over button
         $(this).css('cursor', 'pointer');
     });
     
@@ -23,6 +23,10 @@ $(document).ready(function() {
         $('html, body').animate({
             scrollTop: $("#contact").offset().top
             }, 900);
+    });
+    
+    $(".dropdown").click(function() { //Toggle visibility of dropdown menu in mobile
+        $(".navList").toggle();
     });
     
 });
