@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>TOMMY VO</title>
+        <title>&lt;Tommy Vo&gt;</title>
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="Tommy.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> <!--CSS CDN-->
@@ -17,23 +17,25 @@
             <img src="downAngle.png" id="downAngle" alt="down arrow">
         </div>
         
-        <nav class="navbar navbar-expand-sm navbar-light justify-content-end sticky-top">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" id="navAboutMe">About Me</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="navProjects">Projects</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" id="navContact">Contact</a>
-            </li>
-          </ul>
+        <nav id="navbar">
+            <div class="dropdown">
+                <a id="navHamburger">&#9776;</a>
+                <div class="navList">
+                    <a class="navAboutMe" href="#aboutMe">About Me</a>
+                    <a class="navProjects" href="#projects">Projects</a>
+                    <a class="navContact" href="#contact">Contact</a>
+                </div>
+            </div>
+            <span class="navLinks">
+                <a class="navContact" href="#contact">Contact</a>
+                <a class="navProjects" href="#projects">Projects</a>
+                <a class="navAboutMe" href="#aboutMe">About Me</a>
+            </span>
         </nav>
         
         <div id="aboutMe">
             <div class="jumbotron jumbotron-fluid aboutMe">
-                <div class="container">
+                <div class="padding">
                     <h1>About Me:</h1>
                 </div>
                 <div class="paper">
@@ -42,14 +44,17 @@
                         //Base: Kansas City, MO<br>
                         <br>
                         //Education:<br>
-                        <span class="tagPurple">var</span> <span class="tagGreen">degree</span> <span class="tagPurple">=</span> <span class="tagOrange">"Bachelor of Science - Computer Science"</span>;<br>
+                        <span class="tagPurple">var</span> <span class="tagGreen">degree1</span> <span class="tagPurple">=</span> <span class="tagOrange">"Bachelor of Science - Computer Science"</span>;<br>
+                        <span class="tagPurple">var</span> <span class="tagGreen">degree2</span> <span class="tagPurple">=</span> <span class="tagOrange">"Associate of Arts"</span>;<br>
                         <br>
                         //Skills:<br>
                         <span class="tagPurple">var</span> <span class="tagGreen">Programming</span> <span class="tagPurple">=</span> [<span class="tagOrange">"Java"</span>, <span class="tagOrange">"C++"</span>];
                         <br>
-                        <span class="tagPurple">var</span> <span class="tagGreen">Web_Development</span> <span class="tagPurple">=</span> [<span class="tagOrange">"Javascript"</span>, <span class="tagOrange">"jQuery"</span>, <span class="tagOrange">"HTML"</span>, <span class="tagOrange">"PHP"</span>, <span class="tagOrange">"CSS"</span>, <span class="tagOrange">"Bootstrap"</span>];
+                        <span class="tagPurple">var</span> <span class="tagGreen">Web_Development</span> <span class="tagPurple">=</span> [<span class="tagOrange">"Javascript"</span>, <span class="tagOrange">"jQuery"</span>, <span class="tagOrange">"HTML"</span>, <span class="tagOrange">"CSS"</span>, <span class="tagOrange">"Bootstrap"</span>];
                         <br>
-                        <span class="tagPurple">var</span> <span class="tagGreen">Databases</span> <span class="tagPurple">=</span> [<span class="tagOrange">"MySQL"</span>, <span class="tagOrange">"SQL"</span>];
+                        <span class="tagPurple">var</span> <span class="tagGreen">Databases</span> <span class="tagPurple">=</span> [<span class="tagOrange">"SQL"</span>, <span class="tagOrange">"PHP"</span>];
+                        <br>
+                        <span class="tagPurple">var</span> <span class="tagGreen">Software</span> <span class="tagPurple">=</span> [<span class="tagOrange">"GitHub"</span>, <span class="tagOrange">"MySQL"</span>, <span class="tagOrange">"XAMPP/WAMP"</span>];
                         <br>
                         <span class="tagPurple">var</span> <span class="tagGreen">Microsoft_Office</span> <span class="tagPurple">=</span> [<span class="tagOrange">"Excel"</span>, <span class="tagOrange">"Word"</span>, <span class="tagOrange">"Access"</span>, <span class="tagOrange">"PowerPoint"</span>]; <br>
                         <br>
@@ -60,7 +65,7 @@
             </div>
         </div>
         
-        <div class="container">
+        <div class="padding">
             <div id="projects">
                 <h1>My Projects:</h1>
                 <p>Try to scroll this page and look at the navigation bar while scrolling!</p>
@@ -75,38 +80,27 @@
             
             <div id="contact">
                 <h1>Contact Me:</h1>
-                <p>Try to scroll this page and look at the navigation bar while scrolling!</p>
-                <p>Try to scroll this page and look at the navigation bar while scrolling!</p>
-                <p>Try to scroll this page and look at the navigation bar while scrolling!</p>
-                <p>Try to scroll this page and look at the navigation bar while scrolling!</p>
-                <p>Try to scroll this page and look at the navigation bar while scrolling!</p>
-                <p>Try to scroll this page and look at the navigation bar while scrolling!</p>
-                <p>Try to scroll this page and look at the navigation bar while scrolling!</p>
-                <p>Try to scroll this page and look at the navigation bar while scrolling!</p>
-                <p>Try to scroll this page and look at the navigation bar while scrolling!</p>
-                <p>Try to scroll this page and look at the navigation bar while scrolling!</p>
-                <p>Try to scroll this page and look at the navigation bar while scrolling!</p>
-                <p>Try to scroll this page and look at the navigation bar while scrolling!</p>
-                <p>Try to scroll this page and look at the navigation bar while scrolling!</p>
-                <p>Try to scroll this page and look at the navigation bar while scrolling!</p>
-                <p>Try to scroll this page and look at the navigation bar while scrolling!</p>
-                <p>Try to scroll this page and look at the navigation bar while scrolling!</p>
-                <p>Try to scroll this page and look at the navigation bar while scrolling!</p>
-                <p>Try to scroll this page and look at the navigation bar while scrolling!</p>
-                <p>Try to scroll this page and look at the navigation bar while scrolling!</p>
-                <p>Try to scroll this page and look at the navigation bar while scrolling!</p>
-                <br><br><br>
+                <a href="mailto:votommy@outlook.com"><img class="button" src="email.png" alt="Email Button">
+                    <div style="display: inline-block; margin: 5% 0 5% 2%;">
+                        Send me an email.<br>
+                        VoTommy@outlook.com
+                    </div>
+                </a><br>
+                <a href="https://www.linkedin.com/in/votommy/" target="_blank"><img class="button" src="linkedIn.png" alt="Linked In Button">
+                    <div style="display: inline-block; margin: 5% 0 5% 2%;">
+                        Message me on LinkedIn.<br>
+                        in/VoTommy
+                    </div>
+                </a>
             </div>
         </div>
         
         <footer>
-            <div class="container">
-                <div class="flex-container">
-                    <div>&copy; 2019 Website developed by Tommy Vo</div>
-                    <div class="footerLinks">
-                        <div><a href="mailto:votommy@outlook.com">Email: VoTommy@outlook.com</a></div>
-                        <div><a href="https://www.linkedin.com/in/votommy/" target="_blank">LinkedIn: in/VoTommy</a></div>
-                    </div>
+            <div class="padding">
+                <div class="row">
+                    <div class="col-sm-10">&copy; 2019 Tommy Vo</div>
+                    <div class="col-sm-1"><a href="mailto:votommy@outlook.com"><img src="email.png" style="width: 32px; padding: 3px 0 3px 0; float: right;" alt="Email Button"></a></div>
+                    <div class="col-sm-1"><a href="https://www.linkedin.com/in/votommy/" target="_blank"><img src="linkedIn.png" style="width: 32px; padding: 3px 0 3px 0; float: right;" alt="Linked In Button"></a></div>
                 </div>
             </div>
         </footer>

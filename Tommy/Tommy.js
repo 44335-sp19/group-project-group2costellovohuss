@@ -5,24 +5,47 @@ $(document).ready(function() {
             }, 1000);
     });
 
-    $("#downAngle, #navAboutMe, #navProjects, #navContact").mouseover(function() { //changes mouse pointer to hand when hovered over button
+    $("#downAngle, .navAboutMe, .navProjects, .navContact, #navHamburger").mouseover(function() { //changes mouse cursor to pointer on hover
         $(this).css('cursor', 'pointer');
     });
     
-    $("#navAboutMe").click(function() { //scrolls to About Me on click. Animate smooth scroll
+    $(".navAboutMe").click(function() { //scrolls to About Me on click. Animate smooth scroll
         $('html, body').animate({
             scrollTop: $("#aboutMe").offset().top
             }, 900);
     });
-    $("#navProjects").click(function() { //scrolls to Projects on click. Animate smooth scroll
+    $(".navProjects").click(function() { //scrolls to Projects on click. Animate smooth scroll
         $('html, body').animate({
             scrollTop: $("#projects").offset().top
             }, 900);
     });
-    $("#navContact").click(function() { //scrolls to Contact on click. Animate smooth scroll
+    $(".navContact").click(function() { //scrolls to Contact on click. Animate smooth scroll
         $('html, body').animate({
             scrollTop: $("#contact").offset().top
             }, 900);
     });
     
-});
+    $(".dropdown").click(function() { //Toggle visibility of dropdown menu in mobile
+        $(".navList").toggle();
+    });
+    
+}); //End jQuery
+
+//Javascript ---------------------------------------------------
+
+// Execute scrollFunction on scroll 
+window.onscroll = function() {
+    scrollFunction()
+};
+
+var topOffset = navbar.offsetTop;
+
+// Add sticky class to navbar when you reach its scroll position. Remove sticky class once you leave the scroll position
+function scrollFunction() {
+    if (window.pageYOffset >= topOffset) {
+        document.getElementById("navbar").classList.add("sticky")
+    }
+    else {
+        document.getElementById("navbar").classList.remove("sticky");
+    }
+}
