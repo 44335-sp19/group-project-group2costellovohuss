@@ -5,13 +5,18 @@ $(document).ready(function() {
             }, 1000);
     });
 
-    $("#downAngle, .navAboutMe, .navProjects, .navContact, #navHamburger").mouseover(function() { //changes mouse cursor to pointer on hover
+    $("#downAngle, .navAboutMe, .navExperience, .navProjects, .navContact, #navHamburger").mouseover(function() { //changes mouse cursor to pointer on hover
         $(this).css('cursor', 'pointer');
     });
     
     $(".navAboutMe").click(function() { //scrolls to About Me on click. Animate smooth scroll
         $('html, body').animate({
             scrollTop: $("#aboutMe").offset().top
+            }, 900);
+    });
+    $(".navExperience").click(function() { //scrolls to Work Experience on click. Animate smooth scroll
+        $('html, body').animate({
+            scrollTop: $("#experience").offset().top
             }, 900);
     });
     $(".navProjects").click(function() { //scrolls to Projects on click. Animate smooth scroll
@@ -38,14 +43,15 @@ window.onscroll = function() {
     scrollFunction()
 };
 
+var navbar = document.getElementById("navbar");
 var topOffset = navbar.offsetTop;
 
 // Add sticky class to navbar when you reach its scroll position. Remove sticky class once you leave the scroll position
 function scrollFunction() {
     if (window.pageYOffset >= topOffset) {
-        document.getElementById("navbar").classList.add("sticky")
+        navbar.classList.add("sticky")
     }
     else {
-        document.getElementById("navbar").classList.remove("sticky");
+        navbar.classList.remove("sticky");
     }
 }

@@ -150,6 +150,10 @@ html, body {
   padding-top: 60px;
 }
 
+#navbar {
+    z-index: 1;
+}
+
 #navbar a {
   float: right;
   display: block;
@@ -186,6 +190,24 @@ html, body {
 #indent {
     font-family: "Courier", "Consolas";
     margin-left: 5%;
+}
+
+#experience {
+    margin-bottom: 5%;
+    align-items: center;
+}
+
+.workTitle {
+    font-weight: bold;
+}
+
+.workLogo {
+    width: 150px;
+}
+
+.workDesc {
+    display: inline-block;
+    margin-left: 2%;
 }
 
 .button {
