@@ -5,7 +5,7 @@ $(document).ready(function() {
             }, 1000);
     });
 
-    $("#downAngle, .navAboutMe, .navExperience, .navProjects, .navContact, #navHamburger").mouseover(function() { //changes mouse cursor to pointer on hover
+    $("#downAngle, .navAboutMe, .navExperience, .navContact, #navHamburger").mouseover(function() { //changes mouse cursor to pointer on hover
         $(this).css('cursor', 'pointer');
     });
     
@@ -17,11 +17,6 @@ $(document).ready(function() {
     $(".navExperience").click(function() { //scrolls to Work Experience on click. Animate smooth scroll
         $('html, body').animate({
             scrollTop: $("#experience").offset().top
-            }, 900);
-    });
-    $(".navProjects").click(function() { //scrolls to Projects on click. Animate smooth scroll
-        $('html, body').animate({
-            scrollTop: $("#projects").offset().top
             }, 900);
     });
     $(".navContact").click(function() { //scrolls to Contact on click. Animate smooth scroll

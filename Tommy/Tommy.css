@@ -168,10 +168,6 @@ html, body {
     text-decoration: none;
 }
 
-.aboutMe {
-    background-color: darkgray;
-}
-
 .tagPurple {
     color: #ff5bb9;
     font-family: "Courier", "Consolas";
@@ -184,6 +180,11 @@ html, body {
 
 .tagOrange {
     color: orange;
+    font-family: "Courier", "Consolas";
+}
+
+.tagBlue {
+    color: dodgerblue;
     font-family: "Courier", "Consolas";
 }
 
