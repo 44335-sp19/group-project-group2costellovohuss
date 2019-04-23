@@ -1,11 +1,12 @@
 .jumbotron-fluid p{
-    margin: 5% auto;
+    margin: auto;
     text-align: center;
     font-size: 50px;
 }
 .jumbotron-fluid {
-    background-image;
+    background-image: url(farm.jpg);
     background-size: cover;
+    height: 200px;
 }
 img {
     width: 100%;
@@ -14,4 +15,10 @@ img {
 }
 .nav-link {
     color: black;
+}
+h1, p {
+    text-align: center;
+}
+.color {
+    color: white;
 }
