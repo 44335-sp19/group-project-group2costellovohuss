@@ -5,7 +5,7 @@ $(document).ready(function() {
             }, 1000);
     });
 
-    $("#downAngle, .navAboutMe, .navProjects, .navContact, #navHamburger").mouseover(function() { //changes mouse pointer to hand when hovered over button
+    $("#downAngle, .navAboutMe, .navProjects, .navContact, #navHamburger").mouseover(function() { //changes mouse cursor to pointer on hover
         $(this).css('cursor', 'pointer');
     });
     
@@ -29,4 +29,23 @@ $(document).ready(function() {
         $(".navList").toggle();
     });
     
-});
+}); //End jQuery
+
+//Javascript ---------------------------------------------------
+
+// Execute scrollFunction on scroll 
+window.onscroll = function() {
+    scrollFunction()
+};
+
+var topOffset = navbar.offsetTop;
+
+// Add sticky class to navbar when you reach its scroll position. Remove sticky class once you leave the scroll position
+function scrollFunction() {
+    if (window.pageYOffset >= topOffset) {
+        document.getElementById("navbar").classList.add("sticky")
+    }
+    else {
+        document.getElementById("navbar").classList.remove("sticky");
+    }
+}

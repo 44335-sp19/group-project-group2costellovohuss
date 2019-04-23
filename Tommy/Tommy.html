@@ -17,28 +17,20 @@
             <img src="downAngle.png" id="downAngle" alt="down arrow">
         </div>
         
-        <nav class="navbar navbar-expand-sm justify-content-end sticky-top">
-          <ul class="navbar-nav">
-            <li class="navLinks">
-                <a class="navAboutMe" href="#aboutMe">About Me</a>
-            </li>
-            <li class="navLinks">
-                <a class="navProjects" href="#projects">Projects</a>
-            </li>
-            <li class="navLinks">
+        <nav id="navbar">
+            <div class="dropdown">
+                <a id="navHamburger">&#9776;</a>
+                <div class="navList">
+                    <a class="navAboutMe" href="#aboutMe">About Me</a>
+                    <a class="navProjects" href="#projects">Projects</a>
+                    <a class="navContact" href="#contact">Contact</a>
+                </div>
+            </div>
+            <span class="navLinks">
                 <a class="navContact" href="#contact">Contact</a>
-            </li>
-            <li>
-              <div class="dropdown">
-                  <a id="navHamburger">&#9776;</a>
-                  <div class="navList">
-                      <a class="navAboutMe" href="#aboutMe">About Me</a>
-                      <a class="navProjects" href="#projects">Projects</a>
-                      <a class="navContact" href="#contact">Contact</a>
-                  </div>
-              </div>
-            </li>
-          </ul>
+                <a class="navProjects" href="#projects">Projects</a>
+                <a class="navAboutMe" href="#aboutMe">About Me</a>
+            </span>
         </nav>
         
         <div id="aboutMe">
@@ -58,9 +50,11 @@
                         //Skills:<br>
                         <span class="tagPurple">var</span> <span class="tagGreen">Programming</span> <span class="tagPurple">=</span> [<span class="tagOrange">"Java"</span>, <span class="tagOrange">"C++"</span>];
                         <br>
-                        <span class="tagPurple">var</span> <span class="tagGreen">Web_Development</span> <span class="tagPurple">=</span> [<span class="tagOrange">"Javascript"</span>, <span class="tagOrange">"jQuery"</span>, <span class="tagOrange">"HTML"</span>, <span class="tagOrange">"PHP"</span>, <span class="tagOrange">"CSS"</span>, <span class="tagOrange">"Bootstrap"</span>];
+                        <span class="tagPurple">var</span> <span class="tagGreen">Web_Development</span> <span class="tagPurple">=</span> [<span class="tagOrange">"Javascript"</span>, <span class="tagOrange">"jQuery"</span>, <span class="tagOrange">"HTML"</span>, <span class="tagOrange">"CSS"</span>, <span class="tagOrange">"Bootstrap"</span>];
                         <br>
-                        <span class="tagPurple">var</span> <span class="tagGreen">Databases</span> <span class="tagPurple">=</span> [<span class="tagOrange">"MySQL"</span>, <span class="tagOrange">"SQL"</span>];
+                        <span class="tagPurple">var</span> <span class="tagGreen">Databases</span> <span class="tagPurple">=</span> [<span class="tagOrange">"SQL"</span>, <span class="tagOrange">"PHP"</span>];
+                        <br>
+                        <span class="tagPurple">var</span> <span class="tagGreen">Software</span> <span class="tagPurple">=</span> [<span class="tagOrange">"GitHub"</span>, <span class="tagOrange">"MySQL"</span>, <span class="tagOrange">"XAMPP/WAMP"</span>];
                         <br>
                         <span class="tagPurple">var</span> <span class="tagGreen">Microsoft_Office</span> <span class="tagPurple">=</span> [<span class="tagOrange">"Excel"</span>, <span class="tagOrange">"Word"</span>, <span class="tagOrange">"Access"</span>, <span class="tagOrange">"PowerPoint"</span>]; <br>
                         <br>
@@ -86,12 +80,18 @@
             
             <div id="contact">
                 <h1>Contact Me:</h1>
-                    <a href="mailto:votommy@outlook.com"><img class="button" src="email.png" alt="Email Button"></a>
-                    <div>Send me an email.</div>
-                    <div>VoTommy@outlook.com</div>
-                    <a href="https://www.linkedin.com/in/votommy/" target="_blank"><img class="button" src="linkedIn.png" alt="Linked In Button"></a>
-                    <div>Visit my LinkedIn page.</div>
-                    <div>in/VoTommy</div>
+                <a href="mailto:votommy@outlook.com"><img class="button" src="email.png" alt="Email Button">
+                    <div style="display: inline-block; margin: 5% 0 5% 2%;">
+                        Send me an email.<br>
+                        VoTommy@outlook.com
+                    </div>
+                </a><br>
+                <a href="https://www.linkedin.com/in/votommy/" target="_blank"><img class="button" src="linkedIn.png" alt="Linked In Button">
+                    <div style="display: inline-block; margin: 5% 0 5% 2%;">
+                        Message me on LinkedIn.<br>
+                        in/VoTommy
+                    </div>
+                </a>
             </div>
         </div>
         
@@ -99,8 +99,8 @@
             <div class="padding">
                 <div class="row">
                     <div class="col-sm-10">&copy; 2019 Tommy Vo</div>
-                    <div class="col-sm-1"><a href="mailto:votommy@outlook.com">Email</a></div>
-                    <div class="col-sm-1"><a href="https://www.linkedin.com/in/votommy/" target="_blank">LinkedIn</a></div>
+                    <div class="col-sm-1"><a href="mailto:votommy@outlook.com"><img src="email.png" style="width: 32px; padding: 3px 0 3px 0; float: right;" alt="Email Button"></a></div>
+                    <div class="col-sm-1"><a href="https://www.linkedin.com/in/votommy/" target="_blank"><img src="linkedIn.png" style="width: 32px; padding: 3px 0 3px 0; float: right;" alt="Linked In Button"></a></div>
                 </div>
             </div>
         </footer>
