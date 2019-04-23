@@ -13,6 +13,7 @@
   <body>
       <div class="container">
             <div class="row">
+                <div class="col" id="HomeTab">Home</div>
                 <div class="col" id="ArtTab">Art</div>
                 <div class="col" id="CodeTab">Code</div>
                 <div class="col" id="AboutMeTab">About Me</div>
@@ -20,8 +21,18 @@
         </div>
       <h1>Page of the Arts</h1>
       <p></p>
-      <script>
-</script>
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'ClassWork')">Class Work</button>
+  <button class="tablinks" onclick="openTab(event, 'Personal')">Personal</button>
+</div>
+<div id="ClassWork" class="tabcontent">
+  <h3>Class Work of code</h3>
+  <p>This page is made to so a proffesional side of me.</p>
+</div>
+<div id="Personal" class="tabcontent">
+  <h3>About Me Personal Profile</h3>
+  <p>This page is made so I can show the fun side of me.</p>
+</div>
       <script src="joe.js"></script>
   </body>
 </html>
