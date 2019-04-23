@@ -3,7 +3,7 @@
 }
 
 html, body {
-    overflow-x: hidden; /*Prevents white space on the right in smaller windows*/
+    /*overflow-x: hidden; /*Prevents white space on the right in smaller windows*/
 }
 
 @media screen and (min-width: 850px) { /*full size*/
@@ -139,11 +139,11 @@ html, body {
     left: 48%;
 }
 
-.navLinks a{
-    padding-left: 10px;
+.navLinks a {
+    padding-left: 15px;
     color: darkgray;
 }
-.navLinks a:hover{
+.navLinks a:hover {
     color: black;
     text-decoration: none;
 }
