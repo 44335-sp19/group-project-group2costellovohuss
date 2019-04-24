@@ -187,6 +187,10 @@ html, body {
     color: dodgerblue;
     font-family: "Courier", "Consolas";
 }
+.tagBlue:hover {
+    color: dodgerblue;
+    text-decoration: none;
+}
 
 #indent {
     font-family: "Courier", "Consolas";
