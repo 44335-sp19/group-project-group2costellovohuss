@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $("#tommyPic").click(function () { //goes to portfolio when card in clicked
-        window.location.href = "Tommy/Tommy.html";
+        window.location.href = "Tommy/index.html";
     });
     $("#cliftonPic").click(function () { 
         window.location.href = "CJ.html/Clifton.html";
