@@ -15,6 +15,7 @@ img {
 }
 .nav-link {
     color: black;
+    font-size: 25px;
 }
 h1, p {
     text-align: center;
@@ -22,3 +23,33 @@ h1, p {
 .color {
     color: white;
 }
+.experience {
+    text-align: left;
+    padding: inherit;
+}
+.design {
+    height: 500px;
+}
+.aboutMe {
+    padding: inherit;
+}
+.rounded {
+    height: auto;
+    width: auto;
+}
+.resume {
+    width: 700px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
