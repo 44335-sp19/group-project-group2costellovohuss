@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>&lt;Tommy Vo&gt;</title>
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="TV.ico" type="image/x-icon"> <!--favicon-->
         <link rel="stylesheet" href="Tommy.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> <!--CSS CDN-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -13,8 +13,8 @@
     </head>
     <body data-spy="scroll" data-target=".navbar">
         <div class="jumbotron jumbotron-fluid landing">
-            <img src="sig.png" class="sig" alt="Tommy's signature">
-            <img src="downAngle.png" id="downAngle" alt="down arrow">
+            <img src="images/landing_page/sig.png" class="sig" alt="Tommy's signature">
+            <img src="images/landing_page/downAngle.png" id="downAngle" alt="down arrow button">
         </div>
         
         <nav id="navbar">
@@ -23,11 +23,13 @@
                 <div class="navList">
                     <a class="navAboutMe" href="#aboutMe">About Me</a>
                     <a class="navExperience" href="#experience">Experience</a>
+                    <a class="navAwards" href="#awards">Awards</a>
                     <a class="navContact" href="#contact">Contact</a>
                 </div>
             </div>
             <span class="navLinks">
                 <a class="navContact" href="#contact">Contact</a>
+                <a class="navAwards" href="#awards">Awards</a>
                 <a class="navExperience" href="#experience">Experience</a>
                 <a class="navAboutMe" href="#aboutMe">About Me</a>
             </span>
@@ -54,7 +56,7 @@
                         <br>
                         <span class="tagPurple">var</span> <span class="tagGreen">Databases</span> <span class="tagPurple">=</span> [<span class="tagOrange">"SQL"</span>, <span class="tagOrange">"PHP"</span>];
                         <br>
-                        <span class="tagPurple">var</span> <span class="tagGreen">Software</span> <span class="tagPurple">=</span> [<span class="tagOrange">"GitHub"</span>, <span class="tagOrange">"MySQL"</span>, <span class="tagOrange">"XAMPP/WAMP"</span>];
+                        <span class="tagPurple">var</span> <span class="tagGreen">Applications</span> <span class="tagPurple">=</span> [<span class="tagOrange">"GitHub"</span>, <span class="tagOrange">"MySQL"</span>, <span class="tagOrange">"XAMPP/WAMP"</span>];
                         <br>
                         <span class="tagPurple">var</span> <span class="tagGreen">Microsoft_Office</span> <span class="tagPurple">=</span> [<span class="tagOrange">"Excel"</span>, <span class="tagOrange">"Word"</span>, <span class="tagOrange">"Access"</span>, <span class="tagOrange">"PowerPoint"</span>]; <br>
                         <br>
@@ -73,21 +75,51 @@
                 <h1>Work Experience:</h1>
                 <ul class="list-group">
                     <li class="list-group-item">
-                        <img class="workLogo" src="NWlogo.png" alt="Northwest Missouri State University logo">
+                        <img class="workLogo" src="images/logos/NWlogo.png" alt="Northwest Missouri State University logo">
                         <span class="workDesc">
                             <span class="workTitle">Internship - Computer Science/Information Systems</span><br>
                             Northwest Missouri State University<br>
                             May 2019 - August 2019<br>
-                            <span class="badge badge-pill badge-info">C#</span>
-                            <span class="badge badge-pill badge-danger">.NET</span>
+                            <span class="badge badge-pill badge-green">C#</span>
+                            <span class="badge badge-pill badge-purple">.NET</span>
                         </span>
                     </li>
                     <li class="list-group-item">
-                        <img class="workLogo" src="FPlogo.png" alt="Fresh Prints logo">
+                        <img class="workLogo" src="images/logos/FPlogo.png" alt="Fresh Prints logo">
                         <span class="workDesc">
                             <span class="workTitle">Campus Manager</span><br>
                             Fresh Prints<br>
                             November 2018 - December 2018<br>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div id="awards">
+                <h1>Honors &amp; Awards:</h1>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <img class="workLogo" src="images/logos/verizonLogo.png" alt="Verizon logo">
+                        <span class="workDesc">
+                            <span class="workTitle">Best in State Award - Verizon App Challenge</span><br>
+                            Kansas City, MO<br>
+                            2017<br>
+                            <span class="badge badge-pill badge-blue">Python</span>
+                            <span class="badge badge-pill badge-orange">Java</span>
+                            <span class="badge badge-pill badge-green">Android</span>
+                        </span>
+                    </li>
+                    <li class="list-group-item">
+                        <img class="workLogo" src="images/logos/fedLogo.png" alt="Federal Reserve Bank of Kansas City logo">
+                        <span class="workDesc">
+                            <span class="workTitle">Inclusivity Award - Federal Reserve Bank Code-a-Thon</span><br>
+                            Kansas City, MO<br>
+                            2018<br>
+                            <span class="badge badge-pill badge-orange">HTML</span>
+                            <span class="badge badge-pill badge-purple">CSS</span>
+                            <span class="badge badge-pill badge-blue">PHP</span>
+                            <span class="badge badge-pill badge-red">SQL</span>
+                            <span class="badge badge-pill badge-magenta">WAMPP</span>
                         </span>
                     </li>
                 </ul>
@@ -97,13 +129,15 @@
         <div class="padding">            
             <div id="contact">
                 <h1>Contact Me:</h1>
-                <a href="mailto:votommy@outlook.com"><img class="button" src="email.png" alt="Email Button">
+                <a href="mailto:votommy@outlook.com">
+                    <img class="button" src="images/contact/email.png" alt="Email Button">
                     <div style="display: inline-block; margin: 5% 0 5% 2%;">
                         Send me an email.<br>
                         VoTommy@outlook.com
                     </div>
                 </a><br>
-                <a href="https://www.linkedin.com/in/votommy/" target="_blank"><img class="button" src="linkedIn.png" alt="Linked In Button">
+                <a href="https://www.linkedin.com/in/votommy/" target="_blank">
+                    <img class="button" src="images/contact/linkedIn.png" alt="Linked In Button">
                     <div style="display: inline-block; margin: 5% 0 5% 2%;">
                         Message me on LinkedIn.<br>
                         in/VoTommy
@@ -118,12 +152,12 @@
                     <div class="col-sm-10">&copy; 2019 Tommy Vo</div>
                     <div class="col-sm-1">
                         <a href="mailto:votommy@outlook.com">
-                            <img src="email.png" style="width: 32px; padding: 3px 0 3px 0; float: right;" alt="Email Button">
+                            <img src="images/contact/email.png" style="width: 32px; padding: 3px 0 3px 0; float: right;" alt="Email Button">
                         </a>
                     </div>
                     <div class="col-sm-1">
                         <a href="https://www.linkedin.com/in/votommy/" target="_blank">
-                            <img src="linkedIn.png" style="width: 32px; padding: 3px 0 3px 0; float: right;" alt="Linked In Button">
+                            <img src="images/contact/linkedIn.png" style="width: 32px; padding: 3px 0 3px 0; float: right;" alt="Linked In Button">
                         </a>
                     </div>
                 </div>
