@@ -250,7 +250,10 @@ html, body {
     background-color: orange;
 }
 .badge-red {
-    background-color: darkred;
+    background-color: rgb(200, 0, 0);
+}
+.badge-black {
+    background-color: rgb(50, 50, 50);
 }
 .badge-magenta {
     background-color: magenta;
