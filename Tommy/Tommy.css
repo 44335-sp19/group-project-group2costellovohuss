@@ -82,6 +82,11 @@ html, body {
         padding: 0 10% 0 10%;
     }
     
+    .jumbotron {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
     .landing {
         background-image: url("images/landing_page/keyboard.png");
         background-attachment: fixed;
