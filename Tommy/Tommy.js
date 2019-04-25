@@ -38,7 +38,7 @@ $(document).ready(function() { //jQuery
 //Javascript ---------------------------------------------------
 // Execute scrollFunction on scroll 
 window.onscroll = function() {
-    scrollFunction()
+    scrollFunction();
 };
 
 var navbar = document.getElementById("navbar");
@@ -46,7 +46,7 @@ var topOffset = navbar.offsetTop;
 // Toggle sticky navbar when the scroll position is reached.
 function scrollFunction() {
     if (window.pageYOffset >= topOffset) {
-        navbar.classList.add("sticky")
+        navbar.classList.add("sticky");
     }
     else {
         navbar.classList.remove("sticky");
