@@ -73,11 +73,45 @@ html, body {
         padding: 0 1% 0 1%;
     }
     
-    #navHamburger { /*Makes hamburger menu visible*/
-        display: contents;
-        font-size: 200%;
-        color: darkgray;
+    #hamburger {
+        width: 35px;
+        height: 20px;
+        position: relative;
+        margin: 18px;
     }
+    #hamburger span { /*The three lines*/
+        display: block;
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        background: dimgrey;
+        left: 0;
+        transition: .25s;
+    }
+    #hamburger .top {
+        top: 0px; /*top*/
+    }
+    #hamburger .middle1, #hamburger .middle2 {
+        top: 12px; /*middle*/
+    }
+    #hamburger .bottom {
+        top: 24px; /*bottom*/
+    }
+    #hamburger.x .top {
+        top: 12px; /*move to middle*/
+        transform: rotate(135deg);
+    }
+    #hamburger.x .middle1 {
+        transform: rotate(45deg);
+    }
+    #hamburger.x .middle2 {
+        transform: rotate(-45deg);
+    }
+    #hamburger.x .bottom {
+        top: 12px; /*move to middle*/
+        transform: rotate(-135deg);
+    }
+
     .navLinks { /*Hides navbar links*/
         display: none;
     }
@@ -90,17 +124,17 @@ html, body {
         display: none;
         position: absolute;
         right: 0;
-        background-color: rgba(255, 255, 255, 0.5);
+        background-color: rgba(0, 0, 0, 0.7);
         min-width: 210px;
-        padding: 55px 30px 15px 30px;
+        padding-top: 15px;
     }
     .navList a {
-        color: dimgray !important;
+        color: darkgrey!important;
         text-decoration: none;
         font-size: 24px;
     }
     .navList a:hover {
-        color: black !important;
+        color: white !important;
         text-decoration: none;
     }
     

@@ -1,14 +1,13 @@
-$(document).ready(function() {
+$(document).ready(function() { //jQuery
     $("#downAngle").click(function() { //scrolls to aboutMe on click. Animate smooth scroll
         $('html, body').animate({
             scrollTop: $("#aboutMe").offset().top
             }, 1000);
     });
 
-    $("#downAngle, .navAboutMe, .navExperience, .navAwards, .navContact, #navHamburger").mouseover(function() { //changes mouse cursor to pointer on hover
+    $("#downAngle, #hamburger, .navAboutMe, .navExperience, .navAwards, .navContact").mouseover(function() { //toggle between cursor and pointer on hover
         $(this).css('cursor', 'pointer');
     });
-    
     $(".navAboutMe").click(function() { //scrolls to About Me on click. Animate smooth scroll
         $('html, body').animate({
             scrollTop: $("#aboutMe").offset().top
@@ -19,7 +18,7 @@ $(document).ready(function() {
             scrollTop: $("#experience").offset().top
             }, 900);
     });
-    $(".navAwards").click(function() { //scrolls to Work Experience on click. Animate smooth scroll
+    $(".navAwards").click(function() { //scrolls to Honors & Awards on click. Animate smooth scroll
         $('html, body').animate({
             scrollTop: $("#awards").offset().top
             }, 900);
@@ -30,10 +29,10 @@ $(document).ready(function() {
             }, 900);
     });
     
-    $(".dropdown").click(function() { //Toggle visibility of dropdown menu in mobile
-        $(".navList").toggle();
+    $(".dropdown").click(function() {
+        $(".navList").toggle(); //Toggle visibility of dropdown menu in mobile
+        $("#hamburger").toggleClass('x'); //Toggle between hamburger and X
     });
-    
 }); //End jQuery
 
 //Javascript ---------------------------------------------------
@@ -44,8 +43,7 @@ window.onscroll = function() {
 
 var navbar = document.getElementById("navbar");
 var topOffset = navbar.offsetTop;
-
-// Add sticky class to navbar when you reach its scroll position. Remove sticky class once you leave the scroll position
+// Toggle sticky navbar when the scroll position is reached.
 function scrollFunction() {
     if (window.pageYOffset >= topOffset) {
         navbar.classList.add("sticky")
