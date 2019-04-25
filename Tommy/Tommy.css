@@ -20,7 +20,7 @@ html, body {
     width: 100%;
     background: dimgrey;
     left: 0;
-    transition: .25s;
+    transition: .4s;
 }
 #hamburger .top {
     top: 0px; /*top*/
