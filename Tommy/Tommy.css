@@ -1,18 +1,83 @@
 * {
-    font-family: "Century Gothic", "Avenir", "Futura";
+    font-family: "Century Gothic", "Avenir", "Arial", "Arial";
 }
 
 html, body {
     overflow-x: hidden; /*Prevents white space on smaller windows*/
 }
 
+/*Navbar---------------------------------------------------*/
+#hamburger {
+    width: 35px;
+    height: 20px;
+    position: relative;
+    margin: 18px;
+}
+#hamburger span { /*The three lines*/
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: dimgrey;
+    left: 0;
+    transition: .25s;
+}
+#hamburger .top {
+    top: 0px; /*top*/
+}
+#hamburger .middle1, #hamburger .middle2 {
+    top: 12px; /*middle*/
+}
+#hamburger .bottom {
+    top: 24px; /*bottom*/
+}
+#hamburger.x .top {
+    top: 12px; /*move to middle*/
+    transform: rotate(135deg);
+}
+#hamburger.x .middle1 {
+    transform: rotate(45deg);
+}
+#hamburger.x .middle2 {
+    transform: rotate(-45deg);
+}
+#hamburger.x .bottom {
+    top: 12px; /*move to middle*/
+    transform: rotate(-135deg);
+}
+.dropdown {
+    float: right;
+    position: relative;
+    display: block;
+}
+.navList {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    min-width: 210px;
+    padding-top: 15px;
+    border-radius: 24px 0;
+}
+.navList a {
+    color: lightgrey!important;
+    text-decoration: none;
+    font-size: 24px;
+    text-align: center;
+}
+.navList a:hover {
+    color: white !important;
+    text-decoration: none;
+}
+/*End navbar---------------------------------------------------*/
+
 @media screen and (min-width: 850px) { /*full size*/
-    .padding {
-        padding: 0 10% 0 10%;
+    .header {
+        font-size: 36px;
     }
     
-    .dropdown { /*Hide hamburger menu*/
-        display: none;
+    .padding {
+        padding: 0 10% 0 10%;
     }
     
     .landing {
@@ -35,16 +100,20 @@ html, body {
         color: white;
         font-size: 14px;
     }
-} /*large*/
+    
+    .workLogo {
+        width: 150px;
+    }
+} /*full-size*/
 
 @media screen and (max-width: 850px) { /*medium*/
+    .header {
+        font-size: 28px;
+    }
+    
     .padding {
         padding: 0 5% 0 5%;
     }
-    
-    .dropdown { /*Hide hamburger menu*/
-        display: none;
-    }    
     
     .landing {
         background-image: url("images/landing_page/keyboard.png");
@@ -66,76 +135,18 @@ html, body {
         color: white;
         font-size: 13px;
     }
-} /*full size*/
+    .workLogo {
+        width: 125px;
+    }
+} /*medium*/
 
 @media screen and (max-width: 600px) { /*small*/
-    .padding {
-        padding: 0 1% 0 1%;
+    .header {
+        font-size: 20px;
     }
     
-    #hamburger {
-        width: 35px;
-        height: 20px;
-        position: relative;
-        margin: 18px;
-    }
-    #hamburger span { /*The three lines*/
-        display: block;
-        position: absolute;
-        height: 4px;
-        width: 100%;
-        background: dimgrey;
-        left: 0;
-        transition: .25s;
-    }
-    #hamburger .top {
-        top: 0px; /*top*/
-    }
-    #hamburger .middle1, #hamburger .middle2 {
-        top: 12px; /*middle*/
-    }
-    #hamburger .bottom {
-        top: 24px; /*bottom*/
-    }
-    #hamburger.x .top {
-        top: 12px; /*move to middle*/
-        transform: rotate(135deg);
-    }
-    #hamburger.x .middle1 {
-        transform: rotate(45deg);
-    }
-    #hamburger.x .middle2 {
-        transform: rotate(-45deg);
-    }
-    #hamburger.x .bottom {
-        top: 12px; /*move to middle*/
-        transform: rotate(-135deg);
-    }
-
-    .navLinks { /*Hides navbar links*/
-        display: none;
-    }
-    .dropdown {
-        float: right;
-        position: relative;
-        display: block;
-    }
-    .navList {
-        display: none;
-        position: absolute;
-        right: 0;
-        background-color: rgba(0, 0, 0, 0.7);
-        min-width: 210px;
-        padding-top: 15px;
-    }
-    .navList a {
-        color: darkgrey!important;
-        text-decoration: none;
-        font-size: 24px;
-    }
-    .navList a:hover {
-        color: white !important;
-        text-decoration: none;
+    .padding {
+        padding: 0 1% 0 1%;
     }
     
     .landing {
@@ -157,6 +168,9 @@ html, body {
         font-family: "Courier", "Consolas";
         color: white;
         font-size: 12px;
+    }
+    .workLogo {
+        width: 100px;
     }
 } /*small*/
 
@@ -192,10 +206,6 @@ html, body {
   text-align: center;
   padding: 15px;
   text-decoration: none;
-}
-.navLinks a:hover {
-    color: black !important;
-    text-decoration: none;
 }
 
 .tagPurple { /*Javascript visual format*/
@@ -253,9 +263,6 @@ html, body {
 .workTitle {
     font-weight: bold;
 }
-.workLogo {
-    width: 150px;
-}
 .workDesc {
     display: inline-block;
     margin-left: 2%;
@@ -276,14 +283,8 @@ html, body {
 }
 
 footer {
-    font-size: 14px;
-    padding: 3% 0 3% 0;
-    background-color: lightgrey;
-}
-footer a {
-    color: black;
-}
-footer a:hover {
-    color: magenta;
-    text-decoration: none;
+    font-size: 12px;
+    padding: 2% 0 2% 0;
+    border-top: 1px dashed lightgrey;
+    color: grey;
 }

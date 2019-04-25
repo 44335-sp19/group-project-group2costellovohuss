@@ -18,7 +18,7 @@ $(document).ready(function() { //jQuery
             scrollTop: $("#experience").offset().top
             }, 900);
     });
-    $(".navAwards").click(function() { //scrolls to Honors & Awards on click. Animate smooth scroll
+    $(".navAwards").click(function() { //scrolls to Awards on click. Animate smooth scroll
         $('html, body').animate({
             scrollTop: $("#awards").offset().top
             }, 900);
