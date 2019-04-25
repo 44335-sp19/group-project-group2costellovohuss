@@ -21,6 +21,12 @@ p {
 body{
     color: white;
 }
+.tabImg{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
 /* Style the tab */
 .tab {
   overflow: hidden;

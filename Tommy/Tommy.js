@@ -1,22 +1,26 @@
-$(document).ready(function() {
+$(document).ready(function() { //jQuery
     $("#downAngle").click(function() { //scrolls to aboutMe on click. Animate smooth scroll
         $('html, body').animate({
             scrollTop: $("#aboutMe").offset().top
             }, 1000);
     });
 
-    $("#downAngle, .navAboutMe, .navProjects, .navContact, #navHamburger").mouseover(function() { //changes mouse cursor to pointer on hover
+    $("#downAngle, #hamburger, .navAboutMe, .navExperience, .navAwards, .navContact").mouseover(function() { //toggle between cursor and pointer on hover
         $(this).css('cursor', 'pointer');
     });
-    
     $(".navAboutMe").click(function() { //scrolls to About Me on click. Animate smooth scroll
         $('html, body').animate({
             scrollTop: $("#aboutMe").offset().top
             }, 900);
     });
-    $(".navProjects").click(function() { //scrolls to Projects on click. Animate smooth scroll
+    $(".navExperience").click(function() { //scrolls to Work Experience on click. Animate smooth scroll
         $('html, body').animate({
-            scrollTop: $("#projects").offset().top
+            scrollTop: $("#experience").offset().top
+            }, 900);
+    });
+    $(".navAwards").click(function() { //scrolls to Awards on click. Animate smooth scroll
+        $('html, body').animate({
+            scrollTop: $("#awards").offset().top
             }, 900);
     });
     $(".navContact").click(function() { //scrolls to Contact on click. Animate smooth scroll
@@ -25,27 +29,26 @@ $(document).ready(function() {
             }, 900);
     });
     
-    $(".dropdown").click(function() { //Toggle visibility of dropdown menu in mobile
-        $(".navList").toggle();
+    $(".dropdown").click(function() {
+        $(".navList").toggle(); //Toggle visibility of dropdown menu in mobile
+        $("#hamburger").toggleClass('x'); //Toggle between hamburger and X
     });
-    
 }); //End jQuery
 
 //Javascript ---------------------------------------------------
-
 // Execute scrollFunction on scroll 
 window.onscroll = function() {
-    scrollFunction()
+    scrollFunction();
 };
 
+var navbar = document.getElementById("navbar");
 var topOffset = navbar.offsetTop;
-
-// Add sticky class to navbar when you reach its scroll position. Remove sticky class once you leave the scroll position
+// Toggle sticky navbar when the scroll position is reached.
 function scrollFunction() {
     if (window.pageYOffset >= topOffset) {
-        document.getElementById("navbar").classList.add("sticky")
+        navbar.classList.add("sticky");
     }
     else {
-        document.getElementById("navbar").classList.remove("sticky");
+        navbar.classList.remove("sticky");
     }
 }

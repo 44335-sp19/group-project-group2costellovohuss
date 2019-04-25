@@ -1,22 +1,89 @@
 * {
-    font-family: "Century Gothic", "Avenir", "Futura";
+    font-family: "Century Gothic", "Avenir", "Arial", "Arial";
 }
 
 html, body {
-    overflow-x: hidden; /*Prevents white space on the right in smaller windows*/
+    overflow-x: hidden; /*Prevents white space on smaller windows*/
 }
 
+/*Navbar---------------------------------------------------*/
+#hamburger {
+    width: 35px;
+    height: 20px;
+    position: relative;
+    margin: 18px;
+}
+#hamburger span { /*The three lines*/
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: dimgrey;
+    left: 0;
+    transition: .4s;
+}
+/*Closed menu*/
+#hamburger #top {
+    top: 0px; /*top*/
+}
+#hamburger #middle1, #hamburger #middle2 {
+    top: 12px; /*middle*/
+}
+#hamburger #bottom {
+    top: 24px; /*bottom*/
+}
+/*Opened menu*/
+#hamburger.x #top {
+    top: 12px; /*move to middle*/
+    transform: rotate(315deg);
+}
+#hamburger.x #middle1 {
+    transform: rotate(45deg);
+}
+#hamburger.x #middle2 {
+    transform: rotate(-45deg);
+}
+#hamburger.x #bottom {
+    top: 12px; /*move to middle*/
+    transform: rotate(-315deg);
+}
+.dropdown {
+    float: right;
+    position: relative;
+    display: block;
+}
+.navList {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    min-width: 210px;
+    padding-top: 15px;
+    border-radius: 24px 0;
+}
+.navList a {
+    color: lightgrey!important;
+    text-decoration: none;
+    font-size: 24px;
+    text-align: center;
+}
+.navList a:hover {
+    color: white !important;
+    text-decoration: none;
+}
+/*End navbar---------------------------------------------------*/
+
 @media screen and (min-width: 850px) { /*full size*/
+    .header {
+        font-size: 36px;
+    }
+    
     .padding {
         padding: 0 10% 0 10%;
     }
     
-    .dropdown { /*Hide hamburger menu*/
-        display: none;
-    }
-    
     .landing {
-        background-image: url("keyboard.png");
+        background-image: url("images/landing_page/keyboard.png");
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
@@ -35,19 +102,23 @@ html, body {
         color: white;
         font-size: 14px;
     }
-}
+    
+    .workLogo {
+        width: 150px;
+    }
+} /*full-size*/
 
 @media screen and (max-width: 850px) { /*medium*/
+    .header {
+        font-size: 28px;
+    }
+    
     .padding {
         padding: 0 5% 0 5%;
     }
     
-    .dropdown { /*Hide hamburger menu*/
-        display: none;
-    }    
-    
     .landing {
-        background-image: url("keyboard.png");
+        background-image: url("images/landing_page/keyboard.png");
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
@@ -66,46 +137,22 @@ html, body {
         color: white;
         font-size: 13px;
     }
-}
+    .workLogo {
+        width: 125px;
+    }
+} /*medium*/
 
-@media screen and (max-width: 600px) { /*Small*/
+@media screen and (max-width: 600px) { /*small*/
+    .header {
+        font-size: 20px;
+    }
+    
     .padding {
         padding: 0 1% 0 1%;
     }
     
-    #navHamburger { /*Makes hamburger menu visible*/
-        display: contents;
-        font-size: 200%;
-        color: darkgray;
-    }
-    .navLinks { /*Hides navbar links*/
-        display: none;
-    }
-    .dropdown {
-        float: right;
-        position: relative;
-        display: block;
-    }
-    .navList {
-        display: none;
-        position: absolute;
-        right: 0;
-        background-color: rgba(255, 255, 255, 0.5);
-        min-width: 210px;
-        padding: 55px 30px 15px 30px;
-    }
-    .navList a {
-        color: dimgray !important;
-        text-decoration: none;
-        font-size: 24px;
-    }
-    .navList a:hover {
-        color: black !important;
-        text-decoration: none;
-    }
-    
     .landing {
-        background-image: url("keyboard.png");
+        background-image: url("images/landing_page/keyboard.png");
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
@@ -124,14 +171,16 @@ html, body {
         color: white;
         font-size: 12px;
     }
-}
+    .workLogo {
+        width: 100px;
+    }
+} /*small*/
 
 .sig {
     display: block;
     margin: 8% auto 8% auto;
     width: 65%;
 }
-
 #downAngle {
     width: 4%;
     position: sticky;
@@ -149,7 +198,9 @@ html, body {
 .sticky + .content {
   padding-top: 60px;
 }
-
+#navbar {
+    z-index: 1;
+}
 #navbar a {
   float: right;
   display: block;
@@ -159,33 +210,67 @@ html, body {
   text-decoration: none;
 }
 
-.navLinks a:hover {
-    color: black !important;
-    text-decoration: none;
-}
-
-.aboutMe {
-    background-color: darkgray;
-}
-
-.tagPurple {
+.tagPurple { /*Javascript visual format*/
     color: #ff5bb9;
     font-family: "Courier", "Consolas";
 }
-
 .tagGreen {
     color: #4df06a;
     font-family: "Courier", "Consolas";
 }
-
 .tagOrange {
     color: orange;
     font-family: "Courier", "Consolas";
+}
+.tagBlue {
+    color: dodgerblue;
+    font-family: "Courier", "Consolas";
+}
+.tagBlue:hover {
+    color: dodgerblue;
+    text-decoration: none;
 }
 
 #indent {
     font-family: "Courier", "Consolas";
     margin-left: 5%;
+}
+
+.badge { /*Custom badge colors*/
+    color: white;
+}
+.badge-green {
+    background-color: green;
+}
+.badge-purple {
+    background-color: rebeccapurple;
+}
+.badge-blue {
+    background-color: royalblue;
+}
+.badge-orange {
+    background-color: orange;
+}
+.badge-red {
+    background-color: rgb(200, 0, 0);
+}
+.badge-black {
+    background-color: rgb(50, 50, 50);
+}
+.badge-magenta {
+    background-color: magenta;
+}
+
+#experience, #awards, #contact { /*Space between each section*/
+    margin-bottom: 5%;
+}
+
+.workTitle {
+    font-weight: bold;
+}
+.workDesc {
+    display: inline-block;
+    margin-left: 2%;
 }
 
 .button {
@@ -197,24 +282,15 @@ html, body {
     color: darkgrey;
     text-decoration: none;
 }
-
 #contact a:hover {
     color: black;
     text-decoration: none;
 }
 
 footer {
-    margin-top: 5%;
-    font-size: 14px;
-    padding: 3% 0 3% 0;
-    background-color: lightgrey;
-}
-
-footer a {
-    color: black;
-}
-
-footer a:hover {
-    color: magenta;
-    text-decoration: none;
+    font-size: 12px;
+    padding: 2% 0 2% 0;
+    border-top: 1px dashed lightgrey;
+    color: grey;
+    text-align: center;
 }
