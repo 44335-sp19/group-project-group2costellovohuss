@@ -22,26 +22,28 @@ html, body {
     left: 0;
     transition: .4s;
 }
-#hamburger .top {
+/*Closed menu*/
+#hamburger #top {
     top: 0px; /*top*/
 }
-#hamburger .middle1, #hamburger .middle2 {
+#hamburger #middle1, #hamburger #middle2 {
     top: 12px; /*middle*/
 }
-#hamburger .bottom {
+#hamburger #bottom {
     top: 24px; /*bottom*/
 }
-#hamburger.x .top {
+/*Opened menu*/
+#hamburger.x #top {
     top: 12px; /*move to middle*/
     transform: rotate(315deg);
 }
-#hamburger.x .middle1 {
+#hamburger.x #middle1 {
     transform: rotate(45deg);
 }
-#hamburger.x .middle2 {
+#hamburger.x #middle2 {
     transform: rotate(-45deg);
 }
-#hamburger.x .bottom {
+#hamburger.x #bottom {
     top: 12px; /*move to middle*/
     transform: rotate(-315deg);
 }
