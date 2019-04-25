@@ -82,6 +82,11 @@ html, body {
         padding: 0 10% 0 10%;
     }
     
+    .jumbotron {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    
     .landing {
         background-image: url("images/landing_page/keyboard.png");
         background-attachment: fixed;
@@ -92,7 +97,7 @@ html, body {
     
     .paper {
         margin: 0 10% 0 10%;
-        padding: 2.5% 2.5% 10% 2.5%;
+        padding: 2.5% 2.5% 6% 2.5%;
         background-color: #282a36;
         min-width: 70%;
         border-radius: 20px;
@@ -127,7 +132,7 @@ html, body {
     
     .paper {
         margin: 0 5% 0 5%;
-        padding: 1% 1% 5% 1%;
+        padding: 1% 1% 4% 1%;
         background-color: #282a36;
         min-width: 70%;
         border-radius: 20px;
@@ -161,7 +166,7 @@ html, body {
     
     .paper {
         margin: 0 1% 0 1%;
-        padding: 1% 1% 5% 1%;
+        padding: 1% 1% 4% 1%;
         background-color: #282a36;
         min-width: 70%;
         border-radius: 20px;

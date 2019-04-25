@@ -6,7 +6,7 @@ $(document).ready(function() {
         window.location.href = "CJ.html/Clifton.html";
     });
     $("#joePic").click(function () { 
-        window.location.href = "Joe/Joe.html";
+        window.location.href = "Joe/joe.html";
     });
     
     $("#tommyPic, #cliftonPic, #joePic").mouseover(function() { //When hovering over card,
