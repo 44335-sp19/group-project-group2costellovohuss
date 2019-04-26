@@ -1,12 +1,12 @@
 $(document).ready(function() {
     $("#tommyPic").click(function () { //goes to portfolio when card in clicked
-        window.location.href = "Tommy/index.html";
+        window.open("Tommy/index.html", '_blank');
     });
     $("#cliftonPic").click(function () { 
-        window.location.href = "CJ.html/Clifton.html";
+        window.open("CJ.html/Clifton.html", '_blank');
     });
     $("#joePic").click(function () { 
-        window.location.href = "Joe/joe.html";
+        window.open("Joe/joe.html", '_blank');
     });
     
     $("#tommyPic, #cliftonPic, #joePic").mouseover(function() { //When hovering over card,
