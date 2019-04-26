@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $("#tommyPic").click(function () { //goes to portfolio when card in clicked
+    $("#tommyPic").click(function () { //opens portfolio when card is clicked
         window.open("Tommy/index.html", '_blank');
     });
     $("#cliftonPic").click(function () { 
