@@ -52,3 +52,6 @@ function scrollFunction() {
         navbar.classList.remove("sticky");
     }
 }
+
+var year = new Date().getFullYear(); //Automatically update copyright year
+document.getElementById("copyrightDate").innerHTML = "&copy;" + year + " Developed by Tommy Vo | All rights reserved";
