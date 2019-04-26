@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function() { //jQuery
     $("#tommyPic").click(function () { //opens portfolio when card is clicked
         window.open("Tommy/index.html", '_blank');
     });
@@ -16,9 +16,9 @@ $(document).ready(function() {
     $("#tommyPic, #cliftonPic, #joePic").mouseout(function() { //When mouse off card,
         $(this).css('transform', 'scale(1)'); //reverts card back to normal size
     });
+}); //End jQuery
 
-});
-
+//JavaScript -------------------
 //Automatically update copyright year
 var date = new Date();
 var year = date.getFullYear();
