@@ -18,3 +18,9 @@ $(document).ready(function() {
     });
 
 });
+
+//Automatically update copyright year
+var date = new Date();
+var year = date.getFullYear();
+var element = document.getElementById("copyrightDate");
+element.innerHTML = "&copy;" + year + " Tommy Vo | Clifton Huss | Joe Costello";

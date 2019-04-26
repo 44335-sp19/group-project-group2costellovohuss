@@ -266,8 +266,8 @@ html, body {
     background-color: magenta;
 }
 
-#experience, #awards, #contact { /*Space between each section*/
-    margin-bottom: 5%;
+#awards, #contact, footer { /*Space between each section*/
+    margin-top: 5%;
 }
 
 .workTitle {
