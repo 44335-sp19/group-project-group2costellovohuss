@@ -1,3 +1,7 @@
+body {
+    background-color: gainsboro !important; 
+    margin: 15px;
+}
 .jumbotron-fluid p{
     margin: auto;
     text-align: center;
@@ -13,12 +17,20 @@ img {
     height: auto;
     padding: 15px;
 }
+.round {
+    border-radius: 10%;
+}
 .nav-link {
-    color: black;
+    color: whitesmoke;
     font-size: 25px;
 }
-h1, p {
+h1, h4, p {
+    text-align: left;
+    margin: 20px;
+}
+h2 {
     text-align: center;
+    margin: 20px;
 }
 .color {
     color: white;
@@ -26,12 +38,10 @@ h1, p {
 .experience {
     text-align: left;
     padding: inherit;
+    font-weight: bold;
 }
 .design {
     height: 500px;
-}
-.aboutMe {
-    padding: inherit;
 }
 .rounded {
     height: auto;
@@ -43,8 +53,17 @@ h1, p {
     display: block;
     margin: auto;
 }
-
-
+.aboutme {
+    transform: rotate(90deg);
+    height: 400px;
+    width: auto;
+    padding-left: 100px;
+}
+.aboutme2 {
+    height: 700px;
+    width: auto;
+    padding: 50px;
+}
 
 
 

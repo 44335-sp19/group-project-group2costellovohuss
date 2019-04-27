@@ -1,12 +1,12 @@
-$(document).ready(function() {
-    $("#tommyPic").click(function () { //goes to portfolio when card in clicked
-        window.location.href = "Tommy/index.html";
+$(document).ready(function() { //jQuery
+    $("#tommyPic").click(function () { //opens portfolio when card is clicked
+        window.open("Tommy/index.html", '_blank');
     });
     $("#cliftonPic").click(function () { 
-        window.location.href = "CJ.html/Clifton.html";
+        window.open("CJ.html/Clifton.html", '_blank');
     });
     $("#joePic").click(function () { 
-        window.location.href = "Joe/joe.html";
+        window.open("Joe/joe.html", '_blank');
     });
     
     $("#tommyPic, #cliftonPic, #joePic").mouseover(function() { //When hovering over card,
@@ -16,5 +16,11 @@ $(document).ready(function() {
     $("#tommyPic, #cliftonPic, #joePic").mouseout(function() { //When mouse off card,
         $(this).css('transform', 'scale(1)'); //reverts card back to normal size
     });
+}); //End jQuery
 
-});
+//JavaScript -------------------
+//Automatically update copyright year
+var date = new Date();
+var year = date.getFullYear();
+var element = document.getElementById("copyrightDate");
+element.innerHTML = "&copy;" + year + " Tommy Vo | Clifton Huss | Joe Costello";
