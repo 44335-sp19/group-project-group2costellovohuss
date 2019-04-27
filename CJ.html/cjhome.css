@@ -1,3 +1,7 @@
+body {
+    background-color: gainsboro !important; 
+    margin: 15px;
+}
 .jumbotron-fluid p{
     margin: auto;
     text-align: center;
@@ -49,8 +53,17 @@ h2 {
     display: block;
     margin: auto;
 }
-
-
+.aboutme {
+    transform: rotate(90deg);
+    height: 400px;
+    width: auto;
+    padding-left: 100px;
+}
+.aboutme2 {
+    height: 700px;
+    width: auto;
+    padding: 50px;
+}
 
 
 
