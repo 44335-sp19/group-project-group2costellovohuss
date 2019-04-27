@@ -1,3 +1,9 @@
+body{
+    background-color: black !important;
+}
+div{
+    background-color: black;
+}
 .row{
     justify-content: center;
     outline-color: cyan;
@@ -8,24 +14,23 @@
     background-color: black;
     color: cyan;
     font-size: 24px;
+    text-align: center;
 }
 h1 {
     text-align: center;
-    color: black;
+    color: cyan;
+    background-color: black;
 }
 h3 {
     text-align: center;
-    color: black;
+    color: cyan;
+    background-color: black;
 }
 p {
     text-align: center;
-    color: black;
+    color: cyan;
+    background-color: black;
 }
-body{
-    color: white;
-}
-
-
 .tabImg{
     display: inherit;
     margin-right: auto;
@@ -33,33 +38,38 @@ body{
 }
 /* Style the tab */
 .tab {
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+  background-color: black;
+    align-content: center;
 }
 
 /* Style the buttons that are used to open the tab content */
 .tab button {
-  background-color: inherit;
-  float: left;
+    align-self: center;
+  background-color: black;
+    color: cyan;
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+    font-size: 16px;
+  padding: 16px 16px;
   transition: 0.3s;
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #ddd;
+  background-color: grey;
 }
-
+.col:hover {
+  background-color: grey;
+}
 /* Create an active/current tablink class */
 .tab button.active {
-  background-color: #ccc;
+  background-color: black;
+    outline-color: cyan;
 }
 
 /* Style the tab content */
 .tabcontent {
   display: none;
-  border: 1px solid #ccc;
-  border-top: none;
+  border-top: none; 
+    background-color: black;
