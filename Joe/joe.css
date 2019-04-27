@@ -13,7 +13,7 @@ div{
     outline-color: cyan;
     background-color: black;
     color: cyan;
-    font-size: 24px;
+    font-size: 32px;
     text-align: center;
 }
 h1 {
@@ -30,6 +30,7 @@ p {
     text-align: center;
     color: cyan;
     background-color: black;
+    font-size: 16px;
 }
 .tabImg{
     display: inherit;
@@ -50,7 +51,7 @@ p {
   border: none;
   outline: none;
   cursor: pointer;
-    font-size: 16px;
+    font-size: 24px;
   padding: 16px 16px;
   transition: 0.3s;
 }

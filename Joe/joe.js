@@ -21,7 +21,7 @@ $(document).ready(function() {
         window.location.href = "Code.html";
     });
     $("#AboutMeTab").click(function () {
-        window.location.href = "AboutMe.html";
+        window.location.href = "Aboutme.html";
     });
     $("#HomeTab").click(function () {
         window.location.href = "joe.html";
