@@ -20,7 +20,7 @@ html, body {
     width: 100%;
     background: dimgrey;
     left: 0;
-    transition: .4s;
+    transition: .5s;
 }
 /*Closed menu*/
 #hamburger #top {
@@ -33,6 +33,9 @@ html, body {
     top: 24px; /*bottom*/
 }
 /*Opened menu*/
+#hamburger.x span{
+    background: darkorange;
+}
 #hamburger.x #top {
     top: 12px; /*move to middle*/
     transform: rotate(315deg);
