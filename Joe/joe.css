@@ -27,9 +27,9 @@ body{
 
 
 .tabImg{
-    display: block;
-    margin-left: auto;
+    display: inherit;
     margin-right: auto;
+    margin-left: auto;
 }
 /* Style the tab */
 .tab {
