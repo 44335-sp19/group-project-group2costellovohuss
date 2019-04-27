@@ -1,10 +1,13 @@
 .row{
     justify-content: center;
-    outline-color: black;
+    outline-color: cyan;
 }
 .col{
     justify-content: center;
-    outline-color: black;
+    outline-color: cyan;
+    background-color: black;
+    color: cyan;
+    font-size: 24px;
 }
 h1 {
     text-align: center;
@@ -21,15 +24,15 @@ p {
 body{
     color: white;
 }
+
+
 .tabImg{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    
 }
 /* Style the tab */
 .tab {
-  overflow: hidden;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
 }
@@ -58,6 +61,5 @@ body{
 /* Style the tab content */
 .tabcontent {
   display: none;
-  padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
