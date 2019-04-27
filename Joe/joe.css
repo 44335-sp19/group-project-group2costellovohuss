@@ -34,8 +34,8 @@ p {
 }
 .tabImg{
     display: inherit;
-    margin-right: auto;
     margin-left: auto;
+    margin-right: auto;
 }
 /* Style the tab */
 .tab {
